@@ -44,10 +44,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href="mailto:hello@relite.ae"
+                  href="mailto:hello@reliteagency.com"
                   className="text-body text-foreground hover:text-accent transition-colors duration-300"
                 >
-                  hello@relite.ae
+                  hello@reliteagency.com
                 </a>
               </li>
               <li>
@@ -61,10 +61,24 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="ruled-line mt-16 mb-8" />
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <p className="text-caption text-muted">
-            &copy; {new Date().getFullYear()} Relite. All rights reserved.
-          </p>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 sm:gap-6">
+            <p className="text-caption text-muted">
+              &copy; {new Date().getFullYear()} Relite. All rights reserved.
+            </p>
+            <Link
+              href="/privacy"
+              className="text-caption text-muted hover:text-foreground transition-colors duration-300"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms"
+              className="text-caption text-muted hover:text-foreground transition-colors duration-300"
+            >
+              Terms &amp; Conditions
+            </Link>
+          </div>
           <p className="text-caption text-muted">
             Golf Vita, Damac Hills, Dubai
           </p>

@@ -39,10 +39,10 @@ export default function ContactPage() {
                       Email
                     </p>
                     <a
-                      href="mailto:hello@relite.ae"
+                      href="mailto:hello@reliteagency.com"
                       className="text-body-lg text-foreground hover:text-accent-light transition-colors duration-300"
                     >
-                      hello@relite.ae
+                      hello@reliteagency.com
                     </a>
                   </div>
 
