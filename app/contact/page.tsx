@@ -50,41 +50,9 @@ export default function ContactPage() {
                     <p className="text-caption uppercase tracking-widest text-muted mb-2">
                       Location
                     </p>
-                    <p className="text-body-lg text-foreground">
-                      Dubai, United Arab Emirates
+                    <p className="text-body-lg text-foreground max-w-md">
+                      Golf Vita, Damac Hills, Dubai, United Arab Emirates
                     </p>
-                  </div>
-
-                  <div>
-                    <p className="text-caption uppercase tracking-widest text-muted mb-2">
-                      Social
-                    </p>
-                    <div className="flex gap-6">
-                      <a
-                        href="https://linkedin.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-body text-foreground hover:text-accent-light transition-colors duration-300"
-                      >
-                        LinkedIn
-                      </a>
-                      <a
-                        href="https://instagram.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-body text-foreground hover:text-accent-light transition-colors duration-300"
-                      >
-                        Instagram
-                      </a>
-                      <a
-                        href="https://x.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-body text-foreground hover:text-accent-light transition-colors duration-300"
-                      >
-                        X
-                      </a>
-                    </div>
                   </div>
                 </div>
               </RevealText>

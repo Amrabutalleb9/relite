@@ -6,12 +6,6 @@ const footerLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-const socialLinks = [
-  { href: "https://linkedin.com", label: "LinkedIn" },
-  { href: "https://instagram.com", label: "Instagram" },
-  { href: "https://x.com", label: "X" },
-];
-
 export default function Footer() {
   return (
     <footer className="border-t border-border">
@@ -44,22 +38,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Connect */}
+          {/* Contact */}
           <div className="md:col-span-3 md:col-start-10">
-            <p className="text-caption uppercase tracking-widest text-muted mb-5">Connect</p>
-            <ul className="flex flex-col gap-3">
-              {socialLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-body text-foreground hover:text-accent transition-colors duration-300"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+            <p className="text-caption uppercase tracking-widest text-muted mb-5">Contact</p>
+            <ul className="flex flex-col gap-4">
               <li>
                 <a
                   href="mailto:hello@relite.ae"
@@ -67,6 +49,11 @@ export default function Footer() {
                 >
                   hello@relite.ae
                 </a>
+              </li>
+              <li>
+                <p className="text-body text-muted max-w-[14rem]">
+                  Golf Vita, Damac Hills, Dubai, United Arab Emirates
+                </p>
               </li>
             </ul>
           </div>
@@ -79,7 +66,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Relite. All rights reserved.
           </p>
           <p className="text-caption text-muted">
-            Dubai, United Arab Emirates
+            Golf Vita, Damac Hills, Dubai
           </p>
         </div>
       </div>
