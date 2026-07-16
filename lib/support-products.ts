@@ -21,6 +21,22 @@ export type PremiumFeature = {
   url: string;
 };
 
+export type AffiliatePlatformInfo = {
+  explodelyAccount: string;
+  jvzooAccount: string;
+};
+
+export type TechnicalInfo = {
+  supabaseUrl: string;
+  supabaseAccount: string;
+  digitalOceanAccount: string;
+};
+
+export type VslInfo = {
+  everAffiliateAccount: string;
+  convertriAccount: string;
+};
+
 export type SupportProduct = {
   id: string;
   name: string;
@@ -28,6 +44,25 @@ export type SupportProduct = {
   characterName: string;
   links: SupportProductLinks;
   premiumFeatures: PremiumFeature[];
+  affiliatePlatform: AffiliatePlatformInfo;
+  technical: TechnicalInfo;
+  vsl: VslInfo;
+};
+
+export const EMPTY_AFFILIATE_PLATFORM: AffiliatePlatformInfo = {
+  explodelyAccount: "",
+  jvzooAccount: "",
+};
+
+export const EMPTY_TECHNICAL: TechnicalInfo = {
+  supabaseUrl: "",
+  supabaseAccount: "",
+  digitalOceanAccount: "",
+};
+
+export const EMPTY_VSL: VslInfo = {
+  everAffiliateAccount: "",
+  convertriAccount: "",
 };
 
 export const SUPPORT_FIELD_LABELS: Record<
@@ -53,6 +88,19 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       ar: "ProfitLoop يساعدك على كسب المال عن طريق إرسال عروض للناس. الذكاء الاصطناعي يكتب الرسائل بدلًا منك. أنت تختار عرضًا، وترسله، وتتابع مع من يرد عليك. عندما يشتري أحد، تحصل على المال. صفحة التدريب تشرح كل خطوة. لا تحتاج أي خبرة تقنية.",
     },
     characterName: "",
+    affiliatePlatform: {
+      explodelyAccount: "",
+      jvzooAccount: "",
+    },
+    technical: {
+      supabaseUrl: "",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
+    },
+    vsl: {
+      everAffiliateAccount: "",
+      convertriAccount: "",
+    },
     links: {
       signUp: "https://profitloopaccess.com/signup",
       signIn: "https://profitloopaccess.com/login",
@@ -105,6 +153,19 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       ar: "Robinhood يساعدك على كسب المال من يوتيوب شورتس. التطبيق يجد الفيديوهات التي تحصل على مشاهدات كثيرة الآن. ثم يكتب الذكاء الاصطناعي تعليقات لهذه الفيديوهات. أنت تنشر التعليقات مع رابطك. الناس يرون تعليقك، ويضغطون على رابطك، وتكسب المال.",
     },
     characterName: "",
+    affiliatePlatform: {
+      explodelyAccount: "",
+      jvzooAccount: "",
+    },
+    technical: {
+      supabaseUrl: "",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
+    },
+    vsl: {
+      everAffiliateAccount: "",
+      convertriAccount: "",
+    },
     links: {
       signUp: "https://rhappaccess.com/auth/sign-up",
       signIn: "https://rhappaccess.com/auth/login",
@@ -157,6 +218,19 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       ar: "Battery Profits يساعدك على كسب المال عن طريق نشر مقالات على الإنترنت. الذكاء الاصطناعي يكتب لك مقالًا كاملًا، حوالي 1500 كلمة، مع صور. تضيف رابطك داخل المقال. ثم تنشره في مواقع مثل LinkedIn وMedium وQuora وReddit وX. الناس يقرؤون المقال، ويضغطون على رابطك، وتكسب المال.",
     },
     characterName: "",
+    affiliatePlatform: {
+      explodelyAccount: "",
+      jvzooAccount: "",
+    },
+    technical: {
+      supabaseUrl: "",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
+    },
+    vsl: {
+      everAffiliateAccount: "",
+      convertriAccount: "",
+    },
     links: {
       signUp: "https://batteryproftaccess.com/signup-pro",
       signIn: "https://batteryproftaccess.com/login",
@@ -209,6 +283,19 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       ar: "CashTap يساعدك على كسب المال من الروابط الخاصة. تحصل على رابط من متجر أو موقع عروض. عندما يشتري أحد من خلال رابطك، تحصل على المال. التطبيق يساعدك على إيجاد مواضيع جيدة، وكتابة منشورات، ونشر رابطك في الأماكن الصحيحة. التدريب يشرح كل خطوة.",
     },
     characterName: "",
+    affiliatePlatform: {
+      explodelyAccount: "",
+      jvzooAccount: "",
+    },
+    technical: {
+      supabaseUrl: "",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
+    },
+    vsl: {
+      everAffiliateAccount: "",
+      convertriAccount: "",
+    },
     links: {
       signUp: "https://cashtapaiaccess.com/signup",
       signIn: "https://cashtapaiaccess.com/login",
@@ -253,6 +340,19 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       ar: "Qlaps يساعدك على كسب المال باستخدام صور الذكاء الاصطناعي. التطبيق يصنع لك صورًا جميلة بضغطة واحدة. تضيف رابطك إلى الصورة وتنشرها في مواقع مثل Pinterest وInstagram وFacebook. عندما يضغط الناس على رابطك ويشترون، تحصل على المال.",
     },
     characterName: "",
+    affiliatePlatform: {
+      explodelyAccount: "",
+      jvzooAccount: "",
+    },
+    technical: {
+      supabaseUrl: "",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
+    },
+    vsl: {
+      everAffiliateAccount: "",
+      convertriAccount: "",
+    },
     links: {
       signUp: "https://getqlabsaccess.com/signup",
       signIn: "https://getqlabsaccess.com/login",
@@ -297,6 +397,19 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       ar: "Click Clone Profits يساعدك على كسب المال ببيع منتجات جاهزة. التطبيق يعطيك منتجات مثل كتب إلكترونية مع صفحات بيع جاهزة. تأخذ المنتج، وتشاركه على الإنترنت، وعندما يشتري أحد، تحصل على المال. التدريب يشرح لك كل خطوة.",
     },
     characterName: "",
+    affiliatePlatform: {
+      explodelyAccount: "",
+      jvzooAccount: "",
+    },
+    technical: {
+      supabaseUrl: "",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
+    },
+    vsl: {
+      everAffiliateAccount: "",
+      convertriAccount: "",
+    },
     links: {
       signUp: "https://clickcloneprofits.app/auth/signup",
       signIn: "https://clickcloneprofits.app/auth/signin",
@@ -350,6 +463,19 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       ar: "Secret Millionaire Society يساعدك على كسب المال من مواقع بسيطة. التطبيق يبني الموقع بدلًا منك. تضيف رابطك إلى الموقع وتشاركه على الإنترنت. عندما يزور الناس موقعك ويشترون، تحصل على المال. لا تحتاج أن تعرف كيف تُبنى المواقع.",
     },
     characterName: "",
+    affiliatePlatform: {
+      explodelyAccount: "",
+      jvzooAccount: "",
+    },
+    technical: {
+      supabaseUrl: "",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
+    },
+    vsl: {
+      everAffiliateAccount: "",
+      convertriAccount: "",
+    },
     links: {
       signUp: "https://getsmsociety.com/signup",
       signIn: "https://getsmsociety.com/login",

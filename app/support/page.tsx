@@ -26,6 +26,79 @@ function getFieldValue(
   return product.links[key];
 }
 
+type InfoRow = {
+  key: string;
+  label: string;
+  value: string;
+};
+
+function InfoSection({
+  title,
+  intro,
+  rows,
+  copiedKey,
+  onCopy,
+}: {
+  title: string;
+  intro?: string;
+  rows: InfoRow[];
+  copiedKey: string | null;
+  onCopy: (key: string, value: string) => void;
+}) {
+  return (
+    <section className="border border-border">
+      <div className="border-b border-border px-5 py-5">
+        <h3 className="font-heading text-subheading tracking-tight">{title}</h3>
+        {intro ? <p className="mt-2 text-body text-muted">{intro}</p> : null}
+      </div>
+      <ul className="divide-y divide-border">
+        {rows.map((row) => {
+          const empty = !row.value.trim();
+          const url = !empty && isUrl(row.value);
+
+          return (
+            <li
+              key={row.key}
+              className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
+            >
+              <div className="min-w-0 flex-1">
+                <p className="text-caption uppercase tracking-widest text-muted">
+                  {row.label}
+                </p>
+                {empty ? (
+                  <p className="mt-1 text-body text-muted">—</p>
+                ) : url ? (
+                  <a
+                    href={row.value}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block break-all text-body text-accent-light hover:underline"
+                  >
+                    {row.value}
+                  </a>
+                ) : (
+                  <p className="mt-1 break-all text-body text-foreground">
+                    {row.value}
+                  </p>
+                )}
+              </div>
+
+              <button
+                type="button"
+                disabled={empty}
+                onClick={() => onCopy(row.key, row.value)}
+                className="shrink-0 border border-border px-4 py-2 text-caption uppercase tracking-widest text-foreground transition-colors enabled:hover:border-accent enabled:hover:bg-accent enabled:hover:text-background disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                {copiedKey === row.key ? "Copied" : "Copy"}
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
 export default function SupportPage() {
   const [selectedId, setSelectedId] = useState(SUPPORT_PRODUCTS[0]?.id ?? "");
   const [locale, setLocale] = useState<SupportLocale>("en");
@@ -97,6 +170,56 @@ export default function SupportPage() {
     return <p className="text-muted">No products configured.</p>;
   }
 
+  const accessRows: InfoRow[] = SUPPORT_FIELD_KEYS.map((key) => ({
+    key,
+    label: SUPPORT_FIELD_LABELS[key],
+    value: getFieldValue(product, key),
+  }));
+
+  const affiliateRows: InfoRow[] = [
+    {
+      key: "affiliate:explodely",
+      label: "Explodely account",
+      value: product.affiliatePlatform.explodelyAccount,
+    },
+    {
+      key: "affiliate:jvzoo",
+      label: "JVZoo account",
+      value: product.affiliatePlatform.jvzooAccount,
+    },
+  ];
+
+  const technicalRows: InfoRow[] = [
+    {
+      key: "technical:supabase-url",
+      label: "Supabase link",
+      value: product.technical.supabaseUrl,
+    },
+    {
+      key: "technical:supabase-account",
+      label: "Supabase account",
+      value: product.technical.supabaseAccount,
+    },
+    {
+      key: "technical:digitalocean",
+      label: "DigitalOcean account",
+      value: product.technical.digitalOceanAccount,
+    },
+  ];
+
+  const vslRows: InfoRow[] = [
+    {
+      key: "vsl:everaffiliate",
+      label: "EverAffiliate account",
+      value: product.vsl.everAffiliateAccount,
+    },
+    {
+      key: "vsl:convertri",
+      label: "Convertri account",
+      value: product.vsl.convertriAccount,
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
       <div className="min-w-0 flex-1 space-y-8">
@@ -107,7 +230,7 @@ export default function SupportPage() {
             </h1>
             <p className="mt-2 text-body text-muted">
               Select a product to view access, training, support links, and
-              premium features. Click Copy to paste into tickets or chat.
+              tracking details. Click Copy to paste into tickets or chat.
             </p>
           </div>
 
@@ -158,34 +281,33 @@ export default function SupportPage() {
           </div>
 
           <ul className="divide-y divide-border">
-            {SUPPORT_FIELD_KEYS.map((key) => {
-              const value = getFieldValue(product, key);
-              const empty = !value.trim();
-              const url = !empty && isUrl(value);
+            {accessRows.map((row) => {
+              const empty = !row.value.trim();
+              const url = !empty && isUrl(row.value);
 
               return (
                 <li
-                  key={key}
+                  key={row.key}
                   className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div className="min-w-0 flex-1">
                     <p className="text-caption uppercase tracking-widest text-muted">
-                      {SUPPORT_FIELD_LABELS[key]}
+                      {row.label}
                     </p>
                     {empty ? (
                       <p className="mt-1 text-body text-muted">—</p>
                     ) : url ? (
                       <a
-                        href={value}
+                        href={row.value}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-1 block break-all text-body text-accent-light hover:underline"
                       >
-                        {value}
+                        {row.value}
                       </a>
                     ) : (
                       <p className="mt-1 break-all text-body text-foreground">
-                        {value}
+                        {row.value}
                       </p>
                     )}
                   </div>
@@ -193,10 +315,10 @@ export default function SupportPage() {
                   <button
                     type="button"
                     disabled={empty}
-                    onClick={() => copyValue(key, value)}
+                    onClick={() => copyValue(row.key, row.value)}
                     className="shrink-0 border border-border px-4 py-2 text-caption uppercase tracking-widest text-foreground transition-colors enabled:hover:border-accent enabled:hover:bg-accent enabled:hover:text-background disabled:cursor-not-allowed disabled:opacity-40"
                   >
-                    {copiedKey === key ? "Copied" : "Copy"}
+                    {copiedKey === row.key ? "Copied" : "Copy"}
                   </button>
                 </li>
               );
@@ -266,6 +388,30 @@ export default function SupportPage() {
             </ul>
           )}
         </section>
+
+        <InfoSection
+          title="Affiliate platform"
+          intro="Which affiliate account this offer is on."
+          rows={affiliateRows}
+          copiedKey={copiedKey}
+          onCopy={copyValue}
+        />
+
+        <InfoSection
+          title="Technical"
+          intro="Hosting and database accounts for this product."
+          rows={technicalRows}
+          copiedKey={copiedKey}
+          onCopy={copyValue}
+        />
+
+        <InfoSection
+          title="VSL"
+          intro="Which EverAffiliate and Convertri account this offer / VSL is on."
+          rows={vslRows}
+          copiedKey={copiedKey}
+          onCopy={copyValue}
+        />
       </div>
 
       <aside className="w-full shrink-0 lg:sticky lg:top-8 lg:w-64">
