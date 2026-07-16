@@ -80,151 +80,161 @@ export default function SupportPage() {
   }
 
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="font-heading text-heading tracking-tight">
-          Support Product Links
-        </h1>
-        <p className="mt-2 text-body text-muted">
-          Select a product to view access, training, support links, and premium
-          features. Click Copy to paste into tickets or chat.
-        </p>
-      </div>
-
-      <div>
-        <label
-          htmlFor="product-select"
-          className="mb-2 block text-caption uppercase tracking-widest text-muted"
-        >
-          Product
-        </label>
-        <select
-          id="product-select"
-          value={product.id}
-          onChange={(e) => setSelectedId(e.target.value)}
-          className="w-full appearance-none rounded-none border border-border bg-background px-4 py-3 text-body text-foreground outline-none transition-colors focus:border-accent"
-        >
-          {SUPPORT_PRODUCTS.map((p) => (
-            <option key={p.id} value={p.id}>
-              {p.name}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <section className="border border-border">
-        <div className="border-b border-border px-5 py-5">
-          <h2 className="font-heading text-subheading tracking-tight">
-            {product.name}
-          </h2>
-          <p className="mt-2 text-body text-muted">{product.description}</p>
-        </div>
-
-        <ul className="divide-y divide-border">
-          {SUPPORT_FIELD_LABELS.map(({ key, label }) => {
-            const value = getFieldValue(product, key);
-            const empty = !value.trim();
-            const url = !empty && isUrl(value);
-
-            return (
-              <li
-                key={key}
-                className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
-              >
-                <div className="min-w-0 flex-1">
-                  <p className="text-caption uppercase tracking-widest text-muted">
-                    {label}
-                  </p>
-                  {empty ? (
-                    <p className="mt-1 text-body text-muted">—</p>
-                  ) : url ? (
-                    <a
-                      href={value}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-1 block break-all text-body text-accent-light hover:underline"
-                    >
-                      {value}
-                    </a>
-                  ) : (
-                    <p className="mt-1 break-all text-body text-foreground">
-                      {value}
-                    </p>
-                  )}
-                </div>
-
-                <button
-                  type="button"
-                  disabled={empty}
-                  onClick={() => copyValue(key, value)}
-                  className="shrink-0 border border-border px-4 py-2 text-caption uppercase tracking-widest text-foreground transition-colors enabled:hover:border-accent enabled:hover:bg-accent enabled:hover:text-background disabled:cursor-not-allowed disabled:opacity-40"
-                >
-                  {copiedKey === key ? "Copied" : "Copy"}
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-
-      <section className="border border-border">
-        <div className="border-b border-border px-5 py-5">
-          <h3 className="font-heading text-subheading tracking-tight">
-            Premium features
-          </h3>
+    <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
+      <div className="min-w-0 flex-1 space-y-8">
+        <div>
+          <h1 className="font-heading text-heading tracking-tight">
+            Support Product Links
+          </h1>
           <p className="mt-2 text-body text-muted">
-            In-app premium / power-up pages for {product.name}.
+            Select a product to view access, training, support links, and
+            premium features. Click Copy to paste into tickets or chat.
           </p>
         </div>
 
-        {product.premiumFeatures.length === 0 ? (
-          <p className="px-5 py-4 text-body text-muted">—</p>
-        ) : (
+        <section className="border border-border">
+          <div className="border-b border-border px-5 py-5">
+            <h2 className="font-heading text-subheading tracking-tight">
+              {product.name}
+            </h2>
+            <p className="mt-2 text-body text-muted">{product.description}</p>
+          </div>
+
           <ul className="divide-y divide-border">
-            {product.premiumFeatures.map((feature) => {
-              const copyKey = `premium:${feature.name}`;
-              const empty = !feature.url.trim();
+            {SUPPORT_FIELD_LABELS.map(({ key, label }) => {
+              const value = getFieldValue(product, key);
+              const empty = !value.trim();
+              const url = !empty && isUrl(value);
 
               return (
                 <li
-                  key={feature.name}
-                  className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-start sm:justify-between"
+                  key={key}
+                  className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div className="min-w-0 flex-1">
-                    <p className="text-body font-medium text-foreground">
-                      {feature.name}
-                    </p>
-                    <p className="mt-1 text-body text-muted">
-                      {feature.description}
+                    <p className="text-caption uppercase tracking-widest text-muted">
+                      {label}
                     </p>
                     {empty ? (
-                      <p className="mt-2 text-body text-muted">—</p>
-                    ) : (
+                      <p className="mt-1 text-body text-muted">—</p>
+                    ) : url ? (
                       <a
-                        href={feature.url}
+                        href={value}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-2 block break-all text-body text-accent-light hover:underline"
+                        className="mt-1 block break-all text-body text-accent-light hover:underline"
                       >
-                        {feature.url}
+                        {value}
                       </a>
+                    ) : (
+                      <p className="mt-1 break-all text-body text-foreground">
+                        {value}
+                      </p>
                     )}
                   </div>
 
                   <button
                     type="button"
                     disabled={empty}
-                    onClick={() => copyValue(copyKey, feature.url)}
+                    onClick={() => copyValue(key, value)}
                     className="shrink-0 border border-border px-4 py-2 text-caption uppercase tracking-widest text-foreground transition-colors enabled:hover:border-accent enabled:hover:bg-accent enabled:hover:text-background disabled:cursor-not-allowed disabled:opacity-40"
                   >
-                    {copiedKey === copyKey ? "Copied" : "Copy"}
+                    {copiedKey === key ? "Copied" : "Copy"}
                   </button>
                 </li>
               );
             })}
           </ul>
-        )}
-      </section>
+        </section>
+
+        <section className="border border-border">
+          <div className="border-b border-border px-5 py-5">
+            <h3 className="font-heading text-subheading tracking-tight">
+              Premium features
+            </h3>
+            <p className="mt-2 text-body text-muted">
+              In-app premium / power-up pages for {product.name}.
+            </p>
+          </div>
+
+          {product.premiumFeatures.length === 0 ? (
+            <p className="px-5 py-4 text-body text-muted">—</p>
+          ) : (
+            <ul className="divide-y divide-border">
+              {product.premiumFeatures.map((feature) => {
+                const copyKey = `premium:${feature.name}`;
+                const empty = !feature.url.trim();
+
+                return (
+                  <li
+                    key={feature.name}
+                    className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-start sm:justify-between"
+                  >
+                    <div className="min-w-0 flex-1">
+                      <p className="text-body font-medium text-foreground">
+                        {feature.name}
+                      </p>
+                      <p className="mt-1 text-body text-muted">
+                        {feature.description}
+                      </p>
+                      {empty ? (
+                        <p className="mt-2 text-body text-muted">—</p>
+                      ) : (
+                        <a
+                          href={feature.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-2 block break-all text-body text-accent-light hover:underline"
+                        >
+                          {feature.url}
+                        </a>
+                      )}
+                    </div>
+
+                    <button
+                      type="button"
+                      disabled={empty}
+                      onClick={() => copyValue(copyKey, feature.url)}
+                      className="shrink-0 border border-border px-4 py-2 text-caption uppercase tracking-widest text-foreground transition-colors enabled:hover:border-accent enabled:hover:bg-accent enabled:hover:text-background disabled:cursor-not-allowed disabled:opacity-40"
+                    >
+                      {copiedKey === copyKey ? "Copied" : "Copy"}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </section>
+      </div>
+
+      <aside className="w-full shrink-0 lg:sticky lg:top-8 lg:w-64">
+        <p className="mb-3 text-caption uppercase tracking-widest text-muted">
+          Products
+        </p>
+        <nav className="border border-border" aria-label="Products">
+          <ul className="divide-y divide-border">
+            {SUPPORT_PRODUCTS.map((p) => {
+              const active = p.id === product.id;
+              return (
+                <li key={p.id}>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedId(p.id)}
+                    className={`w-full px-4 py-3 text-left text-body transition-colors ${
+                      active
+                        ? "bg-accent text-background"
+                        : "bg-background text-foreground hover:bg-accent-subtle"
+                    }`}
+                    aria-current={active ? "page" : undefined}
+                  >
+                    {p.name}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </aside>
     </div>
   );
 }

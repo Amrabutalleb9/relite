@@ -24,7 +24,7 @@ export default function SupportLayout({
     <div className="min-h-screen bg-background text-foreground">
       <CustomCursor />
       <header className="border-b border-border">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <p className="font-logo text-lg tracking-tight">
             Relite<span className="text-accent-light">.</span>
           </p>
@@ -33,7 +33,7 @@ export default function SupportLayout({
           </p>
         </div>
       </header>
-      <main className="mx-auto max-w-3xl px-5 py-8 md:py-12">{children}</main>
+      <main className="mx-auto max-w-6xl px-5 py-8 md:py-12">{children}</main>
     </div>
   );
 }
