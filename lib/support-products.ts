@@ -91,8 +91,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     },
     characterName: "",
     affiliatePlatform: {
-      explodelyAccount: "",
-      jvzooAccount: "",
+      explodelyAccount: "neomedias",
+      jvzooAccount: "Separated account — andrawisnasersaad2@gmail.com",
     },
     technical: {
       supabaseUrl: "",
@@ -158,7 +158,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     characterName: "",
     affiliatePlatform: {
       explodelyAccount: "",
-      jvzooAccount: "",
+      jvzooAccount: "andrawisnaser@gmail.com — Digital Avalon",
     },
     technical: {
       supabaseUrl: "https://vmsqfzepdtjkwuwetjav.supabase.co",
@@ -224,7 +224,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     characterName: "",
     affiliatePlatform: {
       explodelyAccount: "",
-      jvzooAccount: "",
+      jvzooAccount: "andrawisnaser@gmail.com — Digital Avalon",
     },
     technical: {
       supabaseUrl: "",
@@ -290,7 +290,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     characterName: "",
     affiliatePlatform: {
       explodelyAccount: "",
-      jvzooAccount: "",
+      jvzooAccount: "andrawisnaser@gmail.com — Digital Avalon",
     },
     technical: {
       supabaseUrl: "",
@@ -348,7 +348,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     characterName: "",
     affiliatePlatform: {
       explodelyAccount: "",
-      jvzooAccount: "",
+      jvzooAccount: "andrawisnaser@gmail.com — Digital Avalon",
     },
     technical: {
       supabaseUrl: "",
