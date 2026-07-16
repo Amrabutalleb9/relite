@@ -13,6 +13,29 @@ import {
 
 const PRODUCT_STORAGE_KEY = "relite-support-selected-product";
 const LOCALE_STORAGE_KEY = "relite-support-locale";
+const EMAIL_STORAGE_KEY = "relite-support-email";
+
+const ALLOWED_DOMAIN = "@reliteagency.com";
+const FULL_ACCESS_EMAILS = ["amr@reliteagency.com", "andrew@reliteagency.com"];
+const AFFILIATE_ACCESS_EMAILS = ["tuqa@reliteagency.com"];
+
+type AccessLevel = "full" | "affiliate" | "basic";
+
+function getAccessLevel(email: string): AccessLevel {
+  const normalized = email.trim().toLowerCase();
+  if (FULL_ACCESS_EMAILS.includes(normalized)) return "full";
+  if (AFFILIATE_ACCESS_EMAILS.includes(normalized)) return "affiliate";
+  return "basic";
+}
+
+function isAllowedEmail(email: string): boolean {
+  const normalized = email.trim().toLowerCase();
+  return (
+    normalized.endsWith(ALLOWED_DOMAIN) &&
+    normalized.indexOf("@") === normalized.length - ALLOWED_DOMAIN.length &&
+    normalized.length > ALLOWED_DOMAIN.length
+  );
+}
 
 function isUrl(value: string): boolean {
   return /^https?:\/\//i.test(value);
@@ -104,6 +127,9 @@ export default function SupportPage() {
   const [locale, setLocale] = useState<SupportLocale>("en");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [hydrated, setHydrated] = useState(false);
+  const [authEmail, setAuthEmail] = useState<string | null>(null);
+  const [emailInput, setEmailInput] = useState("");
+  const [loginError, setLoginError] = useState("");
 
   useEffect(() => {
     try {
@@ -115,11 +141,41 @@ export default function SupportPage() {
       if (storedLocale === "en" || storedLocale === "ar") {
         setLocale(storedLocale);
       }
+      const storedEmail = localStorage.getItem(EMAIL_STORAGE_KEY);
+      if (storedEmail && isAllowedEmail(storedEmail)) {
+        setAuthEmail(storedEmail.trim().toLowerCase());
+      }
     } catch {
       // ignore storage errors
     }
     setHydrated(true);
   }, []);
+
+  function handleLogin(e: React.FormEvent) {
+    e.preventDefault();
+    const email = emailInput.trim().toLowerCase();
+    if (!isAllowedEmail(email)) {
+      setLoginError("Access is limited to @reliteagency.com emails.");
+      return;
+    }
+    setLoginError("");
+    setAuthEmail(email);
+    try {
+      localStorage.setItem(EMAIL_STORAGE_KEY, email);
+    } catch {
+      // ignore storage errors
+    }
+  }
+
+  function handleSignOut() {
+    setAuthEmail(null);
+    setEmailInput("");
+    try {
+      localStorage.removeItem(EMAIL_STORAGE_KEY);
+    } catch {
+      // ignore storage errors
+    }
+  }
 
   useEffect(() => {
     if (!hydrated || !selectedId) return;
@@ -169,6 +225,53 @@ export default function SupportPage() {
   if (!product) {
     return <p className="text-muted">No products configured.</p>;
   }
+
+  if (!hydrated) {
+    return null;
+  }
+
+  if (!authEmail) {
+    return (
+      <div className="mx-auto max-w-md py-12">
+        <h1 className="font-heading text-heading tracking-tight">Sign in</h1>
+        <p className="mt-2 text-body text-muted">
+          Enter your Relite email to access the support links page.
+        </p>
+        <form onSubmit={handleLogin} className="mt-8 space-y-4">
+          <div>
+            <label
+              htmlFor="support-email"
+              className="mb-2 block text-caption uppercase tracking-widest text-muted"
+            >
+              Email
+            </label>
+            <input
+              id="support-email"
+              type="email"
+              value={emailInput}
+              onChange={(e) => setEmailInput(e.target.value)}
+              placeholder="you@reliteagency.com"
+              autoComplete="email"
+              className="w-full border border-border bg-background px-4 py-3 text-body text-foreground outline-none transition-colors focus:border-accent"
+            />
+          </div>
+          {loginError ? (
+            <p className="text-body text-red-600">{loginError}</p>
+          ) : null}
+          <button
+            type="submit"
+            className="w-full border border-accent bg-accent px-4 py-3 text-caption uppercase tracking-widest text-background transition-colors hover:bg-accent-light hover:border-accent-light"
+          >
+            Continue
+          </button>
+        </form>
+      </div>
+    );
+  }
+
+  const accessLevel = getAccessLevel(authEmail);
+  const showAffiliate = accessLevel === "full" || accessLevel === "affiliate";
+  const showTechnicalAndVsl = accessLevel === "full";
 
   const accessRows: InfoRow[] = SUPPORT_FIELD_KEYS.map((key) => ({
     key,
@@ -239,35 +342,47 @@ export default function SupportPage() {
             </p>
           </div>
 
-          <div
-            className="inline-flex shrink-0 border border-border self-start"
-            role="group"
-            aria-label="Description language"
-          >
-            <button
-              type="button"
-              onClick={() => setLocale("en")}
-              className={`px-4 py-2 text-caption uppercase tracking-widest transition-colors ${
-                locale === "en"
-                  ? "bg-accent text-background"
-                  : "bg-background text-foreground hover:bg-accent-subtle"
-              }`}
-              aria-pressed={locale === "en"}
+          <div className="flex shrink-0 flex-col items-start gap-2 sm:items-end">
+            <div
+              className="inline-flex border border-border"
+              role="group"
+              aria-label="Description language"
             >
-              English
-            </button>
-            <button
-              type="button"
-              onClick={() => setLocale("ar")}
-              className={`border-l border-border px-4 py-2 text-caption uppercase tracking-widest transition-colors ${
-                locale === "ar"
-                  ? "bg-accent text-background"
-                  : "bg-background text-foreground hover:bg-accent-subtle"
-              }`}
-              aria-pressed={locale === "ar"}
-            >
-              العربية
-            </button>
+              <button
+                type="button"
+                onClick={() => setLocale("en")}
+                className={`px-4 py-2 text-caption uppercase tracking-widest transition-colors ${
+                  locale === "en"
+                    ? "bg-accent text-background"
+                    : "bg-background text-foreground hover:bg-accent-subtle"
+                }`}
+                aria-pressed={locale === "en"}
+              >
+                English
+              </button>
+              <button
+                type="button"
+                onClick={() => setLocale("ar")}
+                className={`border-l border-border px-4 py-2 text-caption uppercase tracking-widest transition-colors ${
+                  locale === "ar"
+                    ? "bg-accent text-background"
+                    : "bg-background text-foreground hover:bg-accent-subtle"
+                }`}
+                aria-pressed={locale === "ar"}
+              >
+                العربية
+              </button>
+            </div>
+            <p className="text-caption text-muted">
+              {authEmail}{" "}
+              <button
+                type="button"
+                onClick={handleSignOut}
+                className="text-accent-light hover:underline"
+              >
+                Sign out
+              </button>
+            </p>
           </div>
         </div>
 
@@ -394,29 +509,35 @@ export default function SupportPage() {
           )}
         </section>
 
-        <InfoSection
-          title="Affiliate platform"
-          intro="Which affiliate account this offer is on."
-          rows={affiliateRows}
-          copiedKey={copiedKey}
-          onCopy={copyValue}
-        />
+        {showAffiliate ? (
+          <InfoSection
+            title="Affiliate platform"
+            intro="Which affiliate account this offer is on."
+            rows={affiliateRows}
+            copiedKey={copiedKey}
+            onCopy={copyValue}
+          />
+        ) : null}
 
-        <InfoSection
-          title="Technical"
-          intro="Hosting and database accounts for this product."
-          rows={technicalRows}
-          copiedKey={copiedKey}
-          onCopy={copyValue}
-        />
+        {showTechnicalAndVsl ? (
+          <>
+            <InfoSection
+              title="Technical"
+              intro="Hosting and database accounts for this product."
+              rows={technicalRows}
+              copiedKey={copiedKey}
+              onCopy={copyValue}
+            />
 
-        <InfoSection
-          title="VSL"
-          intro="Which EverAffiliate and Convertri account this offer / VSL is on."
-          rows={vslRows}
-          copiedKey={copiedKey}
-          onCopy={copyValue}
-        />
+            <InfoSection
+              title="VSL"
+              intro="Which EverAffiliate and Convertri account this offer / VSL is on."
+              rows={vslRows}
+              copiedKey={copiedKey}
+              onCopy={copyValue}
+            />
+          </>
+        ) : null}
       </div>
 
       <aside className="w-full shrink-0 lg:sticky lg:top-8 lg:w-64">
