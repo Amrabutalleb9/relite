@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif, DM_Serif_Display, Cormorant_Garamond, Lato } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import CustomCursor from "@/components/ui/custom-cursor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -57,12 +54,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${instrumentSerif.variable} ${dmSerifDisplay.variable} ${cormorantGaramond.variable} ${lato.variable}`}
     >
-      <body className="font-sans bg-background text-foreground">
-        <CustomCursor />
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body className="font-sans bg-background text-foreground">{children}</body>
     </html>
   );
 }
