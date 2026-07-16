@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import {
   SUPPORT_FIELD_KEYS,
+  SUPPORT_FIELD_LABELS,
   SUPPORT_PRODUCTS,
-  SUPPORT_UI,
   t,
   type SupportLocale,
   type SupportProduct,
@@ -68,7 +68,6 @@ export default function SupportPage() {
 
   const product =
     SUPPORT_PRODUCTS.find((p) => p.id === selectedId) ?? SUPPORT_PRODUCTS[0];
-  const isRtl = locale === "ar";
 
   async function copyValue(key: string, value: string) {
     if (!value) return;
@@ -99,26 +98,23 @@ export default function SupportPage() {
   }
 
   return (
-    <div
-      className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10"
-      dir={isRtl ? "rtl" : "ltr"}
-      lang={locale}
-    >
+    <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
       <div className="min-w-0 flex-1 space-y-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <h1 className="font-heading text-heading tracking-tight">
-              {t(SUPPORT_UI.pageTitle, locale)}
+              Support Product Links
             </h1>
             <p className="mt-2 text-body text-muted">
-              {t(SUPPORT_UI.pageIntro, locale)}
+              Select a product to view access, training, support links, and
+              premium features. Click Copy to paste into tickets or chat.
             </p>
           </div>
 
           <div
             className="inline-flex shrink-0 border border-border self-start"
             role="group"
-            aria-label="Language"
+            aria-label="Description language"
           >
             <button
               type="button"
@@ -135,7 +131,7 @@ export default function SupportPage() {
             <button
               type="button"
               onClick={() => setLocale("ar")}
-              className={`border-s border-border px-4 py-2 text-caption uppercase tracking-widest transition-colors ${
+              className={`border-l border-border px-4 py-2 text-caption uppercase tracking-widest transition-colors ${
                 locale === "ar"
                   ? "bg-accent text-background"
                   : "bg-background text-foreground hover:bg-accent-subtle"
@@ -152,7 +148,11 @@ export default function SupportPage() {
             <h2 className="font-heading text-subheading tracking-tight">
               {product.name}
             </h2>
-            <p className="mt-3 text-body leading-relaxed text-muted">
+            <p
+              className="mt-3 text-body leading-relaxed text-muted"
+              dir={locale === "ar" ? "rtl" : "ltr"}
+              lang={locale}
+            >
               {t(product.description, locale)}
             </p>
           </div>
@@ -162,7 +162,6 @@ export default function SupportPage() {
               const value = getFieldValue(product, key);
               const empty = !value.trim();
               const url = !empty && isUrl(value);
-              const label = t(SUPPORT_UI.fields[key], locale);
 
               return (
                 <li
@@ -171,7 +170,7 @@ export default function SupportPage() {
                 >
                   <div className="min-w-0 flex-1">
                     <p className="text-caption uppercase tracking-widest text-muted">
-                      {label}
+                      {SUPPORT_FIELD_LABELS[key]}
                     </p>
                     {empty ? (
                       <p className="mt-1 text-body text-muted">—</p>
@@ -181,15 +180,11 @@ export default function SupportPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-1 block break-all text-body text-accent-light hover:underline"
-                        dir="ltr"
                       >
                         {value}
                       </a>
                     ) : (
-                      <p
-                        className="mt-1 break-all text-body text-foreground"
-                        dir="ltr"
-                      >
+                      <p className="mt-1 break-all text-body text-foreground">
                         {value}
                       </p>
                     )}
@@ -201,9 +196,7 @@ export default function SupportPage() {
                     onClick={() => copyValue(key, value)}
                     className="shrink-0 border border-border px-4 py-2 text-caption uppercase tracking-widest text-foreground transition-colors enabled:hover:border-accent enabled:hover:bg-accent enabled:hover:text-background disabled:cursor-not-allowed disabled:opacity-40"
                   >
-                    {copiedKey === key
-                      ? t(SUPPORT_UI.copied, locale)
-                      : t(SUPPORT_UI.copy, locale)}
+                    {copiedKey === key ? "Copied" : "Copy"}
                   </button>
                 </li>
               );
@@ -214,10 +207,10 @@ export default function SupportPage() {
         <section className="border border-border">
           <div className="border-b border-border px-5 py-5">
             <h3 className="font-heading text-subheading tracking-tight">
-              {t(SUPPORT_UI.premiumFeatures, locale)}
+              Premium features
             </h3>
             <p className="mt-2 text-body text-muted">
-              {t(SUPPORT_UI.premiumIntro, locale)} {product.name}.
+              In-app premium / power-up pages for {product.name}.
             </p>
           </div>
 
@@ -238,7 +231,11 @@ export default function SupportPage() {
                       <p className="text-body font-medium text-foreground">
                         {feature.name}
                       </p>
-                      <p className="mt-2 text-body leading-relaxed text-muted">
+                      <p
+                        className="mt-2 text-body leading-relaxed text-muted"
+                        dir={locale === "ar" ? "rtl" : "ltr"}
+                        lang={locale}
+                      >
                         {t(feature.description, locale)}
                       </p>
                       {empty ? (
@@ -249,7 +246,6 @@ export default function SupportPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="mt-2 block break-all text-body text-accent-light hover:underline"
-                          dir="ltr"
                         >
                           {feature.url}
                         </a>
@@ -262,9 +258,7 @@ export default function SupportPage() {
                       onClick={() => copyValue(copyKey, feature.url)}
                       className="shrink-0 border border-border px-4 py-2 text-caption uppercase tracking-widest text-foreground transition-colors enabled:hover:border-accent enabled:hover:bg-accent enabled:hover:text-background disabled:cursor-not-allowed disabled:opacity-40"
                     >
-                      {copiedKey === copyKey
-                        ? t(SUPPORT_UI.copied, locale)
-                        : t(SUPPORT_UI.copy, locale)}
+                      {copiedKey === copyKey ? "Copied" : "Copy"}
                     </button>
                   </li>
                 );
@@ -276,7 +270,7 @@ export default function SupportPage() {
 
       <aside className="w-full shrink-0 lg:sticky lg:top-8 lg:w-64">
         <p className="mb-3 text-caption uppercase tracking-widest text-muted">
-          {t(SUPPORT_UI.products, locale)}
+          Products
         </p>
         <nav className="border border-border" aria-label="Products">
           <ul className="divide-y divide-border">
@@ -287,7 +281,7 @@ export default function SupportPage() {
                   <button
                     type="button"
                     onClick={() => setSelectedId(p.id)}
-                    className={`w-full px-4 py-3 text-start text-body transition-colors ${
+                    className={`w-full px-4 py-3 text-left text-body transition-colors ${
                       active
                         ? "bg-accent text-background"
                         : "bg-background text-foreground hover:bg-accent-subtle"

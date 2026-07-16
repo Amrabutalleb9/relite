@@ -30,46 +30,19 @@ export type SupportProduct = {
   premiumFeatures: PremiumFeature[];
 };
 
-export const SUPPORT_UI = {
-  pageTitle: {
-    en: "Support Product Links",
-    ar: "روابط منتجات الدعم",
-  },
-  pageIntro: {
-    en: "Select a product to view access, training, support links, and premium features. Click Copy to paste into tickets or chat.",
-    ar: "اختر منتجًا لعرض روابط الدخول والتدريب والدعم والميزات المميزة. اضغط نسخ للصقها في التذاكر أو الدردشة.",
-  },
-  products: {
-    en: "Products",
-    ar: "المنتجات",
-  },
-  premiumFeatures: {
-    en: "Premium features",
-    ar: "الميزات المميزة",
-  },
-  premiumIntro: {
-    en: "In-app premium / power-up pages for",
-    ar: "صفحات الميزات المميزة داخل التطبيق لـ",
-  },
-  copy: {
-    en: "Copy",
-    ar: "نسخ",
-  },
-  copied: {
-    en: "Copied",
-    ar: "تم النسخ",
-  },
-  fields: {
-    signUp: { en: "Sign up", ar: "إنشاء حساب" },
-    signIn: { en: "Sign in", ar: "تسجيل الدخول" },
-    forgotPassword: { en: "Forgot password", ar: "نسيت كلمة المرور" },
-    training: { en: "Training page", ar: "صفحة التدريب" },
-    supportEmail: { en: "Support email", ar: "بريد الدعم" },
-    supportPortal: { en: "Support portal", ar: "بوابة الدعم" },
-    thankYou: { en: "Thank you page", ar: "صفحة الشكر" },
-    characterName: { en: "Character name", ar: "اسم الشخصية" },
-  },
-} as const;
+export const SUPPORT_FIELD_LABELS: Record<
+  keyof SupportProductLinks | "characterName",
+  string
+> = {
+  signUp: "Sign up",
+  signIn: "Sign in",
+  forgotPassword: "Forgot password",
+  training: "Training page",
+  supportEmail: "Support email",
+  supportPortal: "Support portal",
+  thankYou: "Thank you page",
+  characterName: "Character name",
+};
 
 export const SUPPORT_PRODUCTS: SupportProduct[] = [
   {
