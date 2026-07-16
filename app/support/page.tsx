@@ -312,6 +312,11 @@ export default function SupportPage() {
 
   const vslRows: InfoRow[] = [
     {
+      key: "vsl:character-name",
+      label: "Character name",
+      value: product.characterName,
+    },
+    {
       key: "vsl:everaffiliate",
       label: "EverAffiliate account",
       value: product.vsl.everAffiliateAccount,

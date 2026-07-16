@@ -607,7 +607,6 @@ export const SUPPORT_FIELD_KEYS: Array<
   "supportEmail",
   "supportPortal",
   "thankYou",
-  "characterName",
 ];
 
 export function getSupportProduct(id: string): SupportProduct | undefined {
