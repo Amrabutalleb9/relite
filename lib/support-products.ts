@@ -84,8 +84,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     id: "profitloop",
     name: "ProfitLoop",
     description: {
-      en: "ProfitLoop helps people make money by sending offers to other people. The AI writes the messages for you. You pick an offer, send it out, and follow up with the people who reply. When someone buys, you get paid. The training page shows every step. You do not need any tech skills.",
-      ar: "ProfitLoop يساعدك على كسب المال عن طريق إرسال عروض للناس. الذكاء الاصطناعي يكتب الرسائل بدلًا منك. أنت تختار عرضًا، وترسله، وتتابع مع من يرد عليك. عندما يشتري أحد، تحصل على المال. صفحة التدريب تشرح كل خطوة. لا تحتاج أي خبرة تقنية.",
+      en: "ProfitLoop is an app that helps people make money by sending offers to other people online. The idea is simple: the member picks a ready offer, and the AI writes the outreach messages for them. The member sends the messages, and when someone replies, they follow up using ready scripts. When a person buys through their link, the member earns a commission. Everything works in a loop: send, follow up, get paid, repeat. The training page has short videos that show each step. It is built for beginners, so no tech skills or writing skills are needed.",
+      ar: "ProfitLoop ده تطبيق بيساعد الناس تكسب فلوس عن طريق إنهم يبعتوا عروض لناس تانية على الإنترنت. الفكرة بسيطة: العضو بيختار عرض جاهز، والذكاء الاصطناعي بيكتب له الرسايل. العضو بيبعت الرسايل، ولما حد يرد عليه بيتابع معاه برسايل جاهزة برضه. ولما حد يشتري من اللينك بتاعه، العضو بياخد عمولة. كل حاجة شغالة في حلقة: ابعت، تابع، اقبض، وكرر. صفحة التدريب فيها فيديوهات قصيرة بتشرح كل خطوة. التطبيق معمول للمبتدئين، فمش محتاج أي خبرة تقنية ولا مهارة في الكتابة.",
     },
     characterName: "",
     affiliatePlatform: {
@@ -114,32 +114,32 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       {
         name: "Accelerator",
         description: {
-          en: "This gives you a list of people who are ready to buy. You get about 200 checked emails for each topic. The messages are already written for you. You just send them. This saves you the work of finding people yourself.",
-          ar: "تعطيك قائمة بأشخاص جاهزين للشراء. تحصل على حوالي 200 بريد إلكتروني موثوق لكل مجال. الرسائل مكتوبة لك مسبقًا. أنت فقط ترسلها. هذا يوفر عليك عناء البحث عن الناس بنفسك.",
+          en: "A premium pack of ready buyers' contacts. The member gets about 200 checked and verified emails for each topic, plus outreach messages that are already written. Instead of spending days searching for people to contact, they just open the pack, copy a message, and send it. This is the fastest way to start getting replies and sales.",
+          ar: "باقة مميزة فيها بيانات ناس جاهزين يشتروا. العضو بياخد حوالي 200 إيميل متشيك عليهم ومضمونين لكل مجال، ومعاهم رسايل جاهزة مكتوبة. بدل ما يقعد أيام يدور على ناس يكلمهم، بيفتح الباقة، ينسخ الرسالة، ويبعتها على طول. دي أسرع طريقة يبدأ بيها ياخد ردود ومبيعات.",
         },
         url: "https://profitloopaccess.com/dfy",
       },
       {
         name: "Recurring Streams",
         description: {
-          en: "This gives you more than 200 Facebook posts that are ready to use. You copy a post, add your link, and share it in Facebook groups. People see the post, click your link, and you can earn money. You can do this again and again.",
-          ar: "تعطيك أكثر من 200 منشور فيسبوك جاهز. تنسخ المنشور، وتضيف رابطك، وتشاركه في مجموعات فيسبوك. الناس يرون المنشور، ويضغطون على رابطك، وتكسب المال. ويمكنك تكرار ذلك مرارًا.",
+          en: "A library of more than 200 Facebook posts that are ready to use. The posts are written to look like normal posts from real people, not ads. The member copies a post, adds their link, and shares it in Facebook groups. People read the post, click the link, and the member can earn from every sale. The same posts can be reused again and again in different groups.",
+          ar: "مكتبة فيها أكتر من 200 بوست فيسبوك جاهزين على طول. البوستات مكتوبة بشكل طبيعي كأنها من ناس حقيقيين، مش إعلانات. العضو بينسخ البوست، يحط اللينك بتاعه، وينشره في جروبات فيسبوك. الناس بتقرا البوست، تدوس على اللينك، والعضو بيكسب من كل عملية شراء. ونفس البوستات ممكن يستخدمها تاني وتالت في جروبات مختلفة.",
         },
         url: "https://profitloopaccess.com/instant-income",
       },
       {
         name: "Social Payouts",
         description: {
-          en: "This is a list of more than 100 free websites where you can share your link. You post your link one time on each site. Then people keep finding it and visiting for a long time. You do not pay for ads.",
-          ar: "قائمة بأكثر من 100 موقع مجاني يمكنك نشر رابطك فيه. تنشر رابطك مرة واحدة في كل موقع. وبعدها يستمر الناس في رؤيته وزيارته لوقت طويل. لا تدفع أي إعلانات.",
+          en: "A directory of more than 100 free websites and communities where the member can post their link. The trick is: they post one time on each site, and the link stays there. People keep finding it and clicking it for months, with zero ads cost and no daily posting. Each site comes with simple steps that show exactly where and how to post.",
+          ar: "دليل فيه أكتر من 100 موقع ومجتمع مجاني، العضو يقدر ينشر فيهم اللينك بتاعه. الفكرة إنه بينشر مرة واحدة بس في كل موقع، واللينك بيفضل موجود. الناس بتفضل تلاقيه وتدوس عليه لشهور، من غير ما يدفع مليم إعلانات ومن غير نشر يومي. وكل موقع معاه خطوات بسيطة بتوريه ينشر فين وإزاي بالظبط.",
         },
         url: "https://profitloopaccess.com/autopilot",
       },
       {
         name: "Protector",
         description: {
-          en: "This page shows if the account is safe. It checks the account all the time. If a member asks about account safety, send them this page.",
-          ar: "هذه الصفحة تعرض إذا كان الحساب آمنًا. تفحص الحساب طوال الوقت. إذا سأل عضو عن أمان حسابه، أرسل له هذه الصفحة.",
+          en: "The account safety page. It watches the member's account all the time and shows security checks, login status, and account health in one place. When a member asks 'is my account safe?' or worries about strange logins, send them this page so they can see everything is protected.",
+          ar: "دي صفحة أمان الحساب. بتراقب حساب العضو طول الوقت وبتعرض فحوصات الأمان وحالة تسجيل الدخول وصحة الحساب في مكان واحد. لو عضو سأل 'حسابي آمن؟' أو قلقان من دخول غريب على حسابه، ابعت له الصفحة دي عشان يشوف بنفسه إن كل حاجة محمية.",
         },
         url: "https://profitloopaccess.com/protector",
       },
@@ -149,8 +149,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     id: "robinhood",
     name: "Robinhood",
     description: {
-      en: "Robinhood helps people earn money using YouTube Shorts. The app finds videos that are getting lots of views right now. Then the AI writes comments for those videos. You post the comments with your link. People see your comment, click your link, and you can earn money.",
-      ar: "Robinhood يساعدك على كسب المال من يوتيوب شورتس. التطبيق يجد الفيديوهات التي تحصل على مشاهدات كثيرة الآن. ثم يكتب الذكاء الاصطناعي تعليقات لهذه الفيديوهات. أنت تنشر التعليقات مع رابطك. الناس يرون تعليقك، ويضغطون على رابطك، وتكسب المال.",
+      en: "Robinhood is an app that helps people make money from YouTube Shorts without making any videos. Here is how it works: the app finds short videos that are getting lots of views right now. Then the AI writes natural, friendly comments for those videos. The member posts these comments with their link under the trending videos. Since millions of people watch these videos, many of them see the comment, click the link, and some of them buy. The member earns a commission on each sale. The training shows the full method step by step.",
+      ar: "Robinhood ده تطبيق بيساعد الناس تكسب فلوس من يوتيوب شورتس من غير ما يعملوا أي فيديو. الشغل بيمشي كده: التطبيق بيلاقي الفيديوهات القصيرة اللي بتجيب مشاهدات كتير دلوقتي. بعدين الذكاء الاصطناعي بيكتب تعليقات طبيعية ولطيفة على الفيديوهات دي. العضو بينزل التعليقات دي ومعاها اللينك بتاعه تحت الفيديوهات التريند. ولإن ملايين الناس بتتفرج على الفيديوهات دي، ناس كتير بتشوف التعليق وتدوس على اللينك، وفيهم اللي بيشتري. والعضو بياخد عمولة على كل عملية شراء. والتدريب بيشرح الطريقة كاملة خطوة بخطوة.",
     },
     characterName: "",
     affiliatePlatform: {
@@ -179,32 +179,32 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       {
         name: "Accelerator",
         description: {
-          en: "This gives you more than 200 popular videos with comments already written for them. You do not need to write anything. Just copy a comment, change a word or two, and post it. This makes the work much faster.",
-          ar: "تعطيك أكثر من 200 فيديو رائج مع تعليقات مكتوبة جاهزة. لا تحتاج أن تكتب شيئًا. فقط انسخ التعليق، وغيّر كلمة أو اثنتين، وانشره. هذا يجعل العمل أسرع بكثير.",
+          en: "A Done-For-You vault with more than 200 trending videos, and every video comes with comments that are already written and tested. The member does not write anything. They open the vault, pick a video, copy a comment, change a word or two to make it personal, and post it. It cuts the daily work down to a few minutes.",
+          ar: "خزنة جاهزة فيها أكتر من 200 فيديو تريند، وكل فيديو معاه تعليقات مكتوبة ومجربة. العضو مش بيكتب أي حاجة. بيفتح الخزنة، يختار فيديو، ينسخ تعليق، يغير فيه كلمة أو اتنين عشان يبقى شخصي، وينزله. ده بيخلي الشغل اليومي كله ياخد دقايق بس.",
         },
         url: "https://rhappaccess.com/upgrades/dfy-vault",
       },
       {
         name: "Recurring Streams",
         description: {
-          en: "This gives you more than 200 Facebook posts that are ready to use. The posts sound like real stories, not ads. You add your link, post in Facebook groups, and people click your link.",
-          ar: "تعطيك أكثر من 200 منشور فيسبوك جاهز. المنشورات تبدو كقصص حقيقية، وليست إعلانات. تضيف رابطك، وتنشر في مجموعات فيسبوك، والناس يضغطون على رابطك.",
+          en: "More than 200 Facebook posts that are ready to use. They are written like real personal stories, so they fit naturally inside groups and do not look like ads. The member adds their link, posts in groups, and gets extra traffic from Facebook on top of the YouTube method. Two traffic sources means more clicks and more chances to earn.",
+          ar: "أكتر من 200 بوست فيسبوك جاهزين. مكتوبين كأنهم قصص شخصية حقيقية، فبيبانوا طبيعيين جوه الجروبات ومش شكلهم إعلانات. العضو بيحط اللينك بتاعه، ينشر في الجروبات، وياخد زيارات إضافية من فيسبوك فوق طريقة اليوتيوب. يعني مصدرين زيارات، وده معناه ضغطات أكتر وفرص كسب أكتر.",
         },
         url: "https://rhappaccess.com/upgrades/instant-income",
       },
       {
         name: "Social Payouts",
         description: {
-          en: "This is a list of more than 100 free websites where you can share your link. You post one time, and people keep visiting for a long time. No ads and no daily work needed.",
-          ar: "قائمة بأكثر من 100 موقع مجاني يمكنك نشر رابطك فيه. تنشر مرة واحدة، ويستمر الناس في الزيارة لوقت طويل. لا إعلانات ولا عمل يومي.",
+          en: "A list of more than 100 free websites where the member posts their link one time and keeps getting visitors for months. No ads to pay for and no daily posting schedule. It works quietly in the background while the member focuses on the main method.",
+          ar: "قايمة فيها أكتر من 100 موقع مجاني، العضو بينشر فيهم اللينك بتاعه مرة واحدة وبيفضل ياخد زوار لشهور. مفيش إعلانات يدفعها ولا جدول نشر يومي. الطريقة دي شغالة في الخلفية بهدوء والعضو مركز في الطريقة الأساسية.",
         },
         url: "https://rhappaccess.com/upgrades/automated-income",
       },
       {
         name: "Protector",
         description: {
-          en: "This page shows if the account is safe. It checks logins and sessions all the time. If a member asks about account safety, send them this page.",
-          ar: "هذه الصفحة تعرض إذا كان الحساب آمنًا. تفحص تسجيلات الدخول والجلسات طوال الوقت. إذا سأل عضو عن أمان حسابه، أرسل له هذه الصفحة.",
+          en: "The account safety page. It watches logins and sessions all the time and shows if everything is secure. When a member asks about account safety or sees a strange login, send them this page to check their account status.",
+          ar: "صفحة أمان الحساب. بتراقب تسجيلات الدخول والجلسات طول الوقت وبتوضح إذا كان كل حاجة آمنة. لو عضو سأل عن أمان حسابه أو شاف تسجيل دخول غريب، ابعت له الصفحة دي يشيك على حالة حسابه.",
         },
         url: "https://rhappaccess.com/upgrades/protector",
       },
@@ -214,8 +214,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     id: "battery-profits",
     name: "Battery Profits",
     description: {
-      en: "Battery Profits helps people earn money by posting articles online. The AI writes a full article for you, about 1,500 words, with pictures. You add your link inside the article. Then you post it on sites like LinkedIn, Medium, Quora, Reddit, and X. People read the article, click your link, and you can earn money.",
-      ar: "Battery Profits يساعدك على كسب المال عن طريق نشر مقالات على الإنترنت. الذكاء الاصطناعي يكتب لك مقالًا كاملًا، حوالي 1500 كلمة، مع صور. تضيف رابطك داخل المقال. ثم تنشره في مواقع مثل LinkedIn وMedium وQuora وReddit وX. الناس يقرؤون المقال، ويضغطون على رابطك، وتكسب المال.",
+      en: "Battery Profits is an app that helps people make money by publishing articles online. The member does not write anything. The AI writes a full article of about 1,500 words, made to rank well on Google, and it creates matching pictures too. The member puts their link inside the article, then posts it on big sites like LinkedIn, Medium, Quora, Reddit, and X. Each platform comes with easy step-by-step posting instructions. People find the article, read it, click the link, and the member earns a commission when they buy.",
+      ar: "Battery Profits ده تطبيق بيساعد الناس تكسب فلوس عن طريق نشر مقالات على الإنترنت. العضو مش بيكتب أي حاجة. الذكاء الاصطناعي بيكتب مقال كامل حوالي 1500 كلمة، معمول عشان يظهر كويس في جوجل، وكمان بيعمل صور مناسبة للمقال. العضو بيحط اللينك بتاعه جوه المقال، وبعدين ينشره في مواقع كبيرة زي LinkedIn وMedium وQuora وReddit وX. وكل منصة معاها خطوات نشر سهلة. الناس بتلاقي المقال، تقراه، تدوس على اللينك، والعضو بياخد عمولة لما يشتروا.",
     },
     characterName: "",
     affiliatePlatform: {
@@ -244,32 +244,32 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       {
         name: "Social Payouts",
         description: {
-          en: "You give it one link, and it writes 10 different Facebook posts for you. Each post is written in a different way. You can share them in many groups without writing anything yourself.",
-          ar: "تعطيه رابطًا واحدًا، فيكتب لك 10 منشورات فيسبوك مختلفة. كل منشور مكتوب بطريقة مختلفة. يمكنك مشاركتها في مجموعات كثيرة دون أن تكتب شيئًا بنفسك.",
+          en: "The member gives it one link, and it writes 10 different Facebook posts for that link. Each post uses a different style: one creates urgency, one tells a story, one asks a question, and so on. This lets the member post in many groups without sounding repeated, and reach more people with zero writing.",
+          ar: "العضو بيديله لينك واحد، وهو بيكتب له 10 بوستات فيسبوك مختلفة لنفس اللينك. كل بوست بأسلوب مختلف: واحد بيستعجل الناس، وواحد بيحكي قصة، وواحد بيسأل سؤال، وهكذا. ده بيخلي العضو ينشر في جروبات كتير من غير ما يبان مكرر، ويوصل لناس أكتر من غير ما يكتب حرف.",
         },
         url: "https://batteryproftaccess.com/upsell/10x",
       },
       {
         name: "Recurring Wealth",
         description: {
-          en: "This gives you 100 articles that are already written, with pictures. They cover 10 money-making topics. You add your link, save, and post. No writing needed.",
-          ar: "تعطيك 100 مقال مكتوب مسبقًا، مع صور. تغطي 10 مجالات مربحة. تضيف رابطك، وتحفظ، وتنشر. لا حاجة للكتابة.",
+          en: "A library of 100 articles that are already written and ready, covering 10 money-making topics, and every article comes with 3 professional pictures. The member picks an article, adds their link (it replaces the placeholder automatically), saves, and publishes. It is the fastest way to fill their accounts with content that earns.",
+          ar: "مكتبة فيها 100 مقال جاهزين ومكتوبين، بيغطوا 10 مجالات مربحة، وكل مقال معاه 3 صور احترافية. العضو بيختار مقال، يحط اللينك بتاعه (بيتحط مكان العلامة أوتوماتيك)، يحفظ، وينشر. دي أسرع طريقة يملأ بيها حساباته بمحتوى بيكسب.",
         },
         url: "https://batteryproftaccess.com/upsell/infinite",
       },
       {
         name: "Accelerator",
         description: {
-          en: "This is a list of 60 free websites where you can share your work. Each one has simple steps to follow. You post one time, and people keep visiting your links for a long time.",
-          ar: "قائمة بـ 60 موقعًا مجانيًا يمكنك نشر عملك فيه. كل موقع له خطوات بسيطة. تنشر مرة واحدة، ويستمر الناس في زيارة روابطك لوقت طويل.",
+          en: "A list of 60 free traffic sources organized by topic, each with clear posting steps. The member posts their articles and links one time in the right places, and those places keep sending visitors for a long time. No ads and no daily grind.",
+          ar: "قايمة فيها 60 مصدر زيارات مجاني مقسومين حسب المجال، وكل واحد معاه خطوات نشر واضحة. العضو بينشر مقالاته ولينكاته مرة واحدة في الأماكن الصح، والأماكن دي بتفضل تبعت له زوار لفترة طويلة. من غير إعلانات ومن غير شغل يومي متعب.",
         },
         url: "https://batteryproftaccess.com/automation",
       },
       {
         name: "Wealth Protector",
         description: {
-          en: "This page shows if the account is safe. It checks the account all the time and shows recent activity. If a member asks about account safety, send them this page.",
-          ar: "هذه الصفحة تعرض إذا كان الحساب آمنًا. تفحص الحساب طوال الوقت وتعرض آخر نشاط. إذا سأل عضو عن أمان حسابه، أرسل له هذه الصفحة.",
+          en: "The account safety dashboard. It shows live security checks, verification status, encrypted connection status, and the latest account activity. When a member asks if their account is safe, send them here so they can see the full picture themselves.",
+          ar: "لوحة أمان الحساب. بتعرض فحوصات أمان لحظية وحالة التحقق وحالة التشفير وآخر نشاط على الحساب. لو عضو سأل إذا كان حسابه آمن، ابعته هنا عشان يشوف الصورة كاملة بنفسه.",
         },
         url: "https://batteryproftaccess.com/protector",
       },
@@ -279,8 +279,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     id: "cashtap",
     name: "CashTap",
     description: {
-      en: "CashTap helps people earn money with special links. You get a link from a store or offer site. When someone buys through your link, you get paid. The app helps you find good topics, write posts, and share your link in the right places. The training shows you every step.",
-      ar: "CashTap يساعدك على كسب المال من الروابط الخاصة. تحصل على رابط من متجر أو موقع عروض. عندما يشتري أحد من خلال رابطك، تحصل على المال. التطبيق يساعدك على إيجاد مواضيع جيدة، وكتابة منشورات، ونشر رابطك في الأماكن الصحيحة. التدريب يشرح كل خطوة.",
+      en: "CashTap is an app that helps people make money with affiliate links. An affiliate link is a special link from a store or offer site: when someone buys through it, the link owner gets paid. CashTap helps the member with the whole journey: it finds hot topics people are searching for, writes posts and replies around those topics, and shows the best places to share the link. The member follows the steps, shares content, and earns a commission from every sale. The training page walks through everything from zero.",
+      ar: "CashTap ده تطبيق بيساعد الناس تكسب فلوس من لينكات الأفلييت. لينك الأفلييت ده لينك خاص من متجر أو موقع عروض: لما حد يشتري من خلاله، صاحب اللينك بياخد فلوس. CashTap بيساعد العضو في الرحلة كلها: بيلاقي المواضيع اللي الناس بتدور عليها دلوقتي، وبيكتب بوستات وردود عن المواضيع دي، وبيوريه أحسن أماكن ينشر فيها اللينك. العضو بيمشي على الخطوات، ينشر المحتوى، وياخد عمولة من كل عملية بيع. وصفحة التدريب بتشرح كل حاجة من الصفر.",
     },
     characterName: "",
     affiliatePlatform: {
@@ -309,24 +309,24 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       {
         name: "Done-For-You",
         description: {
-          en: "This gives you 50 topics and search words that already work. You do not need to think of ideas yourself. Just pick one and start. This helps you earn faster.",
-          ar: "تعطيك 50 موضوعًا وكلمة بحث مجربة وناجحة. لا تحتاج أن تفكر في أفكار بنفسك. فقط اختر واحدة وابدأ. هذا يساعدك على الكسب أسرع.",
+          en: "A vault of 50 search angles and keywords that are already proven to work. Instead of guessing what topics to go after, the member picks one from the vault and starts right away. Every angle has been tested, so the member skips the trial-and-error phase and earns faster.",
+          ar: "خزنة فيها 50 زاوية بحث وكلمة مفتاحية مجربين وشغالين فعلًا. بدل ما العضو يخمن يشتغل على أنهي مواضيع، بيختار واحدة من الخزنة ويبدأ على طول. كل زاوية متجربة قبل كده، فالعضو بيوفر وقت التجربة والغلط وبيكسب أسرع.",
         },
         url: "https://cashtapaiaccess.com/dfy",
       },
       {
         name: "Instant Income",
         description: {
-          en: "This gives you more than 200 Facebook posts that are ready to use. You add your link, copy the post, and share it in Facebook groups. You can start the same day.",
-          ar: "تعطيك أكثر من 200 منشور فيسبوك جاهز. تضيف رابطك، وتنسخ المنشور، وتشاركه في مجموعات فيسبوك. يمكنك البدء في نفس اليوم.",
+          en: "More than 200 Facebook posts written like personal success stories, ready to copy and paste. The member adds their affiliate link, copies a post, and shares it in Facebook groups. Because the posts feel real and personal, people engage with them, click the link, and the member can start earning the same day.",
+          ar: "أكتر من 200 بوست فيسبوك مكتوبين على شكل قصص نجاح شخصية، جاهزين للنسخ واللصق. العضو بيحط لينك الأفلييت بتاعه، ينسخ البوست، وينشره في جروبات فيسبوك. ولإن البوستات شكلها حقيقي وشخصي، الناس بتتفاعل معاها وتدوس على اللينك، والعضو ممكن يبدأ يكسب من نفس اليوم.",
         },
         url: "https://cashtapaiaccess.com/instant",
       },
       {
         name: "Automated Profits",
         description: {
-          en: "This is a list of more than 100 free websites where you can share your link. You post one time, and people keep visiting for a long time. No daily work needed.",
-          ar: "قائمة بأكثر من 100 موقع مجاني يمكنك نشر رابطك فيه. تنشر مرة واحدة، ويستمر الناس في الزيارة لوقت طويل. لا حاجة لعمل يومي.",
+          en: "A directory of more than 100 free traffic sources. The member submits their link one time on each source, and the visitors keep coming for months. It builds a steady flow of clicks in the background with no ads and no daily posting.",
+          ar: "دليل فيه أكتر من 100 مصدر زيارات مجاني. العضو بيسجل اللينك بتاعه مرة واحدة في كل مصدر، والزوار بيفضلوا جايين لشهور. ده بيبني تدفق ثابت من الضغطات في الخلفية من غير إعلانات ومن غير نشر يومي.",
         },
         url: "https://cashtapaiaccess.com/autopilot",
       },
@@ -336,8 +336,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     id: "qlaps",
     name: "Qlaps",
     description: {
-      en: "Qlaps helps people earn money using AI pictures. The app makes nice pictures for you with one click. You add your link to the picture and post it on sites like Pinterest, Instagram, and Facebook. When people click your link and buy, you get paid.",
-      ar: "Qlaps يساعدك على كسب المال باستخدام صور الذكاء الاصطناعي. التطبيق يصنع لك صورًا جميلة بضغطة واحدة. تضيف رابطك إلى الصورة وتنشرها في مواقع مثل Pinterest وInstagram وFacebook. عندما يضغط الناس على رابطك ويشترون، تحصل على المال.",
+      en: "Qlaps is an app that helps people make money using AI pictures. The member picks a money-making topic, like home decor or beauty, and the AI creates a beautiful, eye-catching picture in seconds with one click. The member attaches their affiliate link to the picture and posts it on sites like Pinterest, Instagram, TikTok, and Facebook. People see the picture, click the link, and the member earns a commission when they buy. No design skills and no photography needed; the AI does all the creative work.",
+      ar: "Qlaps ده تطبيق بيساعد الناس تكسب فلوس باستخدام صور الذكاء الاصطناعي. العضو بيختار مجال مربح، زي ديكور البيت أو الجمال، والذكاء الاصطناعي بيعمل له صورة جميلة وملفتة في ثواني بضغطة واحدة. العضو بيحط لينك الأفلييت بتاعه مع الصورة وينشرها في مواقع زي Pinterest وInstagram وTikTok وFacebook. الناس بتشوف الصورة، تدوس على اللينك، والعضو بياخد عمولة لما يشتروا. مش محتاج مهارات تصميم ولا تصوير؛ الذكاء الاصطناعي بيعمل كل الشغل الفني.",
     },
     characterName: "",
     affiliatePlatform: {
@@ -366,24 +366,24 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       {
         name: "Done-For-You Images",
         description: {
-          en: "This gives you 100 picture ideas that already work. You do not need to think of ideas. Just pick one and click Generate. The picture is ready to post.",
-          ar: "تعطيك 100 فكرة صورة مجربة وناجحة. لا تحتاج أن تفكر في أفكار. فقط اختر واحدة واضغط Generate. الصورة تكون جاهزة للنشر.",
+          en: "An image vault with 100 picture ideas that are already proven to get clicks. The member does not need to think of ideas or write prompts. They browse the vault, pick an idea, click Generate, and get a ready-to-post picture. It removes the hardest part of the job: knowing what picture will work.",
+          ar: "خزنة صور فيها 100 فكرة صورة مجربين وبيجيبوا ضغطات فعلًا. العضو مش محتاج يفكر في أفكار ولا يكتب أوامر. بيتصفح الخزنة، يختار فكرة، يدوس Generate، وياخد صورة جاهزة للنشر. دي بتشيل أصعب جزء في الشغل: إنك تعرف أنهي صورة هتنجح.",
         },
         url: "https://getqlabsaccess.com/premium/dfy",
       },
       {
         name: "Instant Income",
         description: {
-          en: "This gives you more than 200 Facebook posts that are ready to use. You copy a post, add your link, and share it in groups. No writing needed.",
-          ar: "تعطيك أكثر من 200 منشور فيسبوك جاهز. تنسخ المنشور، وتضيف رابطك، وتشاركه في المجموعات. لا حاجة للكتابة.",
+          en: "More than 200 ready-made Facebook posts. The member copies a post, adds their link, and shares it in groups. It gives them a second source of traffic from Facebook next to the pictures, with no writing at all.",
+          ar: "أكتر من 200 بوست فيسبوك جاهزين. العضو بينسخ البوست، يحط اللينك بتاعه، وينشره في الجروبات. ده بيديله مصدر زيارات تاني من فيسبوك جنب الصور، من غير أي كتابة خالص.",
         },
         url: "https://getqlabsaccess.com/premium/instant-income",
       },
       {
         name: "Autopilot",
         description: {
-          en: "This is a list of 60 free websites where you can share your pictures and links. Each one has simple steps. You post one time, and people keep visiting for a long time.",
-          ar: "قائمة بـ 60 موقعًا مجانيًا يمكنك نشر صورك وروابطك فيه. كل موقع له خطوات بسيطة. تنشر مرة واحدة، ويستمر الناس في الزيارة لوقت طويل.",
+          en: "The Autopilot Traffic Machine: a list of 60 free websites where the member can post their pictures and links. Every site has simple steps to follow. The member posts one time, and those sites keep bringing visitors for a long time without ads.",
+          ar: "آلة الزيارات الأوتوماتيكية: قايمة فيها 60 موقع مجاني العضو يقدر ينشر فيهم صوره ولينكاته. كل موقع معاه خطوات بسيطة. العضو بينشر مرة واحدة، والمواقع دي بتفضل تجيب له زوار لفترة طويلة من غير إعلانات.",
         },
         url: "https://getqlabsaccess.com/premium/autopilot",
       },
@@ -393,8 +393,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     id: "click-clone-profits",
     name: "Click Clone Profits",
     description: {
-      en: "Click Clone Profits helps people earn money by selling ready-made products. The app gives you products like ebooks with sales pages already built. You take a product, share it online, and when someone buys, you get paid. The training shows you how to do each step.",
-      ar: "Click Clone Profits يساعدك على كسب المال ببيع منتجات جاهزة. التطبيق يعطيك منتجات مثل كتب إلكترونية مع صفحات بيع جاهزة. تأخذ المنتج، وتشاركه على الإنترنت، وعندما يشتري أحد، تحصل على المال. التدريب يشرح لك كل خطوة.",
+      en: "Click Clone Profits is an app that helps people make money by selling digital products that are already made for them. The member does not create anything: the app gives them finished products, like ebooks, and each product comes with a sales page that is already built and designed to sell. The member claims a product, gets their own link for it, and shares that link online. When someone buys the product, the member gets paid. The training shows exactly where and how to share the link to get buyers.",
+      ar: "Click Clone Profits ده تطبيق بيساعد الناس تكسب فلوس عن طريق بيع منتجات رقمية جاهزة ومعمولة لهم. العضو مش بيعمل أي حاجة بنفسه: التطبيق بيديله منتجات خالصة، زي الكتب الإلكترونية، وكل منتج معاه صفحة بيع جاهزة ومصممة عشان تبيع. العضو بياخد المنتج، بياخد لينك خاص بيه، وينشر اللينك ده على الإنترنت. لما حد يشتري المنتج، العضو بيقبض. والتدريب بيوريه بالظبط ينشر اللينك فين وإزاي عشان يجيب مشترين.",
     },
     characterName: "",
     affiliatePlatform: {
@@ -424,32 +424,32 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       {
         name: "Done For You",
         description: {
-          en: "This gives you finished products, like ebooks with sales pages. You claim a product and it goes to My Products. Then you can start selling it right away. No need to make anything yourself.",
-          ar: "تعطيك منتجات جاهزة، مثل كتب إلكترونية مع صفحات بيع. تطالب بالمنتج فينتقل إلى My Products. ثم يمكنك البدء ببيعه فورًا. لا حاجة لصنع أي شيء بنفسك.",
+          en: "A collection of finished products: ebooks with sales pages that are already written and designed. The member clicks Claim, and the product moves into My Products with their own selling link. From that moment, they can start promoting and selling it. No writing, no design, no setup.",
+          ar: "مجموعة منتجات خالصة: كتب إلكترونية مع صفحات بيع مكتوبة ومصممة جاهزة. العضو بيدوس Claim، والمنتج بيتنقل لـ My Products ومعاه لينك بيع خاص بيه. من اللحظة دي يقدر يبدأ يروج ويبيع. من غير كتابة ولا تصميم ولا تجهيز.",
         },
         url: "https://clickcloneprofits.app/app/done-for-you",
       },
       {
         name: "Instant Income",
         description: {
-          en: "This gives you more than 200 Facebook posts that are ready to use. You add your product link, copy the post, and share it in groups. You can start the same day.",
-          ar: "تعطيك أكثر من 200 منشور فيسبوك جاهز. تضيف رابط منتجك، وتنسخ المنشور، وتشاركه في المجموعات. يمكنك البدء في نفس اليوم.",
+          en: "More than 200 Facebook posts ready to copy and paste. The member adds their product link, copies a post, and shares it in Facebook groups. The posts are written to get attention and clicks, so the member can start getting buyers the same day.",
+          ar: "أكتر من 200 بوست فيسبوك جاهزين للنسخ واللصق. العضو بيحط لينك المنتج بتاعه، ينسخ البوست، وينشره في جروبات فيسبوك. البوستات مكتوبة عشان تلفت النظر وتجيب ضغطات، فالعضو ممكن يبدأ يجيب مشترين من نفس اليوم.",
         },
         url: "https://clickcloneprofits.app/app/instant-income",
       },
       {
         name: "Automated Income",
         description: {
-          en: "This is a list of more than 100 free websites where you can share your link. You post one time, and people keep visiting for a long time. No daily work needed.",
-          ar: "قائمة بأكثر من 100 موقع مجاني يمكنك نشر رابطك فيه. تنشر مرة واحدة، ويستمر الناس في الزيارة لوقت طويل. لا حاجة لعمل يومي.",
+          en: "A list of more than 100 free traffic sources. The member submits their product link one time on each source, and visitors keep coming for a long time. It builds steady background traffic with no ads and no daily posting.",
+          ar: "قايمة فيها أكتر من 100 مصدر زيارات مجاني. العضو بيسجل لينك المنتج بتاعه مرة واحدة في كل مصدر، والزوار بيفضلوا جايين لفترة طويلة. ده بيبني زيارات ثابتة في الخلفية من غير إعلانات ولا نشر يومي.",
         },
         url: "https://clickcloneprofits.app/app/autopilot",
       },
       {
         name: "Protector",
         description: {
-          en: "This page shows if the account is safe. It checks the account all the time. If a member asks about account safety, send them this page.",
-          ar: "هذه الصفحة تعرض إذا كان الحساب آمنًا. تفحص الحساب طوال الوقت. إذا سأل عضو عن أمان حسابه، أرسل له هذه الصفحة.",
+          en: "The account safety page. It watches the member's account all the time and shows the protection status. When a member asks about account safety, send them this page to check it themselves.",
+          ar: "صفحة أمان الحساب. بتراقب حساب العضو طول الوقت وبتعرض حالة الحماية. لو عضو سأل عن أمان حسابه، ابعت له الصفحة دي يشيك بنفسه.",
         },
         url: "https://clickcloneprofits.app/app/protector",
       },
@@ -459,8 +459,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     id: "secret-millionaire-society",
     name: "Secret Millionaire Society",
     description: {
-      en: "Secret Millionaire Society helps people earn money with simple websites. The app builds the website for you. You add your link to the site and share it online. When people visit your site and buy, you get paid. You do not need to know how to build websites.",
-      ar: "Secret Millionaire Society يساعدك على كسب المال من مواقع بسيطة. التطبيق يبني الموقع بدلًا منك. تضيف رابطك إلى الموقع وتشاركه على الإنترنت. عندما يزور الناس موقعك ويشترون، تحصل على المال. لا تحتاج أن تعرف كيف تُبنى المواقع.",
+      en: "Secret Millionaire Society is an app that helps people make money with simple affiliate websites. The member does not need to know anything about building sites: the app builds a full website for them, filled with content, in a few clicks. The member adds their affiliate link to the site and shares the site online. When visitors come to the site, read the content, and buy through the link, the member earns a commission. The app also gives ready social posts to help bring visitors to each site.",
+      ar: "Secret Millionaire Society ده تطبيق بيساعد الناس تكسب فلوس من مواقع أفلييت بسيطة. العضو مش محتاج يعرف أي حاجة عن بناء المواقع: التطبيق بيبني له موقع كامل مليان محتوى بكام ضغطة. العضو بيحط لينك الأفلييت بتاعه في الموقع وينشر الموقع على الإنترنت. لما الزوار يدخلوا الموقع ويقروا المحتوى ويشتروا من اللينك، العضو بياخد عمولة. وكمان التطبيق بيديله بوستات سوشيال جاهزة تساعده يجيب زوار لكل موقع.",
     },
     characterName: "",
     affiliatePlatform: {
@@ -489,32 +489,32 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
       {
         name: "Accelerator",
         description: {
-          en: "This lets you build as many websites as you want. It also gives you ready Facebook posts for each site you make. This helps you grow faster and share more.",
-          ar: "تتيح لك بناء عدد غير محدود من المواقع. وتعطيك أيضًا منشورات فيسبوك جاهزة لكل موقع تصنعه. هذا يساعدك على النمو أسرع والمشاركة أكثر.",
+          en: "Removes the limits for serious members. They can build as many websites as they want instead of just a few, and they get ready-to-post Facebook content made for every site they build. More sites plus ready content means more visitors and more chances to earn.",
+          ar: "بتشيل الحدود للأعضاء الجادين. يقدروا يبنوا مواقع بعدد ما يحبوا بدل كام موقع بس، وبياخدوا محتوى فيسبوك جاهز للنشر معمول لكل موقع بيبنوه. مواقع أكتر مع محتوى جاهز يعني زوار أكتر وفرص كسب أكتر.",
         },
         url: "https://getsmsociety.com/accelerator",
       },
       {
         name: "Recurring Wealth",
         description: {
-          en: "This gives you ready websites with offers that pay you every month, not just one time. The site comes with your link already inside. You just share it and earn.",
-          ar: "تعطيك مواقع جاهزة بعروض تدفع لك كل شهر، وليس مرة واحدة فقط. الموقع يأتي مع رابطك جاهزًا بداخله. أنت فقط تشاركه وتكسب.",
+          en: "Ready websites built around offers that pay every month, not just one time. When someone subscribes through the member's link, the member keeps earning from that same person month after month. The site arrives in their vault with tested content and their link already placed, so they only need to share it.",
+          ar: "مواقع جاهزة مبنية على عروض بتدفع كل شهر، مش مرة واحدة بس. لما حد يشترك من لينك العضو، العضو بيفضل يكسب من نفس الشخص ده شهر ورا شهر. الموقع بيوصل في الخزنة بتاعته بمحتوى مجرب ولينكه محطوط جاهز، فهو محتاج بس ينشره.",
         },
         url: "https://getsmsociety.com/recurring-wealth",
       },
       {
         name: "Social Payouts",
         description: {
-          en: "This gives you more than 200 Facebook posts for 8 different topics. You add your website link, copy the post, and share it in groups. This sends people to your websites.",
-          ar: "تعطيك أكثر من 200 منشور فيسبوك في 8 مجالات مختلفة. تضيف رابط موقعك، وتنسخ المنشور، وتشاركه في المجموعات. هذا يرسل الناس إلى مواقعك.",
+          en: "More than 200 Facebook posts covering 8 different topics. The member picks a post that matches their site, adds their website link, copies it, and shares it in groups. It is the fastest way to send people to their websites without writing anything.",
+          ar: "أكتر من 200 بوست فيسبوك بيغطوا 8 مجالات مختلفة. العضو بيختار بوست يناسب موقعه، يحط لينك الموقع، ينسخه، وينشره في الجروبات. دي أسرع طريقة يبعت بيها ناس لمواقعه من غير ما يكتب أي حاجة.",
         },
         url: "https://getsmsociety.com/social-payouts",
       },
       {
         name: "Wealth Protector",
         description: {
-          en: "This page shows if the account is safe. It checks the account all the time. If a member asks about account safety, send them this page.",
-          ar: "هذه الصفحة تعرض إذا كان الحساب آمنًا. تفحص الحساب طوال الوقت. إذا سأل عضو عن أمان حسابه، أرسل له هذه الصفحة.",
+          en: "The account safety page. It watches the member's account and websites in real time and shows that everything is locked down and protected. When a member asks about the safety of their account or their sites, send them this page.",
+          ar: "صفحة أمان الحساب. بتراقب حساب العضو ومواقعه لحظة بلحظة وبتوضح إن كل حاجة مقفولة ومحمية. لو عضو سأل عن أمان حسابه أو مواقعه، ابعت له الصفحة دي.",
         },
         url: "https://getsmsociety.com/protector",
       },
