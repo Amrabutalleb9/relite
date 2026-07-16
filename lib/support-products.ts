@@ -92,7 +92,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     characterName: "",
     affiliatePlatform: {
       explodelyAccount: "",
-      jvzooAccount: "JVZoo checkout (account name not in code)",
+      jvzooAccount: "",
     },
     technical: {
       supabaseUrl: "",
@@ -101,7 +101,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     },
     vsl: {
       everAffiliateAccount: "",
-      convertriAccount: "Convertri funnel (account name not in code)",
+      convertriAccount: "",
       cloudflareAccount: "",
     },
     links: {
@@ -163,7 +163,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     technical: {
       supabaseUrl: "https://vmsqfzepdtjkwuwetjav.supabase.co",
       supabaseAccount: "",
-      digitalOceanAccount: "Not used — hosted on Vercel",
+      digitalOceanAccount: "",
     },
     vsl: {
       everAffiliateAccount: "",
@@ -229,7 +229,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     technical: {
       supabaseUrl: "",
       supabaseAccount: "",
-      digitalOceanAccount: "DigitalOcean VPS (account name not in code)",
+      digitalOceanAccount: "",
     },
     vsl: {
       everAffiliateAccount: "",
@@ -294,8 +294,8 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     },
     technical: {
       supabaseUrl: "",
-      supabaseAccount: "Shared Supabase project with 1-Tap Cashflow (URL not in repo)",
-      digitalOceanAccount: "Not used — hosted on Vercel",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
     },
     vsl: {
       everAffiliateAccount: "",
@@ -353,7 +353,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     technical: {
       supabaseUrl: "",
       supabaseAccount: "",
-      digitalOceanAccount: "Not used — hosted on Vercel",
+      digitalOceanAccount: "",
     },
     vsl: {
       everAffiliateAccount: "",
@@ -411,7 +411,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     technical: {
       supabaseUrl: "https://dvysfzfpodwmcniajiaz.supabase.co",
       supabaseAccount: "",
-      digitalOceanAccount: "Not used — hosted on Vercel (andrawisnaser@gmail.com)",
+      digitalOceanAccount: "",
     },
     vsl: {
       everAffiliateAccount: "",
@@ -482,7 +482,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     },
     vsl: {
       everAffiliateAccount: "",
-      convertriAccount: "Convertri funnel (account name not in code)",
+      convertriAccount: "",
       cloudflareAccount: "",
     },
     links: {
@@ -544,7 +544,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     technical: {
       supabaseUrl: "https://sciqftrjpzgmmjuwtnoa.supabase.co",
       supabaseAccount: "",
-      digitalOceanAccount: "Not used — hosted on Vercel",
+      digitalOceanAccount: "",
     },
     vsl: {
       everAffiliateAccount: "",
