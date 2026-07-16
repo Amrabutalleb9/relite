@@ -35,6 +35,7 @@ export type TechnicalInfo = {
 export type VslInfo = {
   everAffiliateAccount: string;
   convertriAccount: string;
+  cloudflareAccount: string;
 };
 
 export type SupportProduct = {
@@ -63,6 +64,7 @@ export const EMPTY_TECHNICAL: TechnicalInfo = {
 export const EMPTY_VSL: VslInfo = {
   everAffiliateAccount: "",
   convertriAccount: "",
+  cloudflareAccount: "",
 };
 
 export const SUPPORT_FIELD_LABELS: Record<
@@ -100,6 +102,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     vsl: {
       everAffiliateAccount: "",
       convertriAccount: "",
+      cloudflareAccount: "",
     },
     links: {
       signUp: "https://profitloopaccess.com/signup",
@@ -165,6 +168,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     vsl: {
       everAffiliateAccount: "",
       convertriAccount: "",
+      cloudflareAccount: "",
     },
     links: {
       signUp: "https://rhappaccess.com/auth/sign-up",
@@ -230,6 +234,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     vsl: {
       everAffiliateAccount: "",
       convertriAccount: "",
+      cloudflareAccount: "",
     },
     links: {
       signUp: "https://batteryproftaccess.com/signup-pro",
@@ -295,6 +300,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     vsl: {
       everAffiliateAccount: "",
       convertriAccount: "",
+      cloudflareAccount: "",
     },
     links: {
       signUp: "https://cashtapaiaccess.com/signup",
@@ -352,6 +358,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     vsl: {
       everAffiliateAccount: "",
       convertriAccount: "",
+      cloudflareAccount: "",
     },
     links: {
       signUp: "https://getqlabsaccess.com/signup",
@@ -409,6 +416,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     vsl: {
       everAffiliateAccount: "",
       convertriAccount: "",
+      cloudflareAccount: "",
     },
     links: {
       signUp: "https://clickcloneprofits.app/auth/signup",
@@ -456,6 +464,72 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     ],
   },
   {
+    id: "aiwealth",
+    name: "AiWealth",
+    description: {
+      en: "AiWealth (AI Wealth OS) is an app that helps people make money with affiliate links from Digistore24. The member pastes their Digistore24 affiliate link into the app, and the system builds a ready 'bridge' page for it: a review page that presents the product and makes people want to buy. Then the Traffic Hub finds blogs in the same niche and writes AI comments the member can post to bring visitors. When someone reads the page, clicks the link, and buys, the member earns the commission. It is made for beginners, with short training videos for every tool.",
+      ar: "AiWealth (AI Wealth OS) ده تطبيق بيساعد الناس تكسب فلوس من لينكات الأفلييت بتاعة Digistore24. العضو بيحط لينك الأفلييت بتاعه في التطبيق، والنظام بيبني له صفحة 'جسر' جاهزة: صفحة مراجعة بتعرض المنتج وتخلي الناس عايزة تشتري. وبعدين الـ Traffic Hub بيلاقي مدونات في نفس المجال وبيكتب تعليقات بالذكاء الاصطناعي العضو ينشرها عشان يجيب زوار. لما حد يقرا الصفحة ويدوس على اللينك ويشتري، العضو بياخد العمولة. التطبيق معمول للمبتدئين، وفيه فيديوهات تدريب قصيرة لكل أداة.",
+    },
+    characterName: "",
+    affiliatePlatform: {
+      explodelyAccount: "",
+      jvzooAccount: "",
+    },
+    technical: {
+      supabaseUrl: "",
+      supabaseAccount: "",
+      digitalOceanAccount: "",
+    },
+    vsl: {
+      everAffiliateAccount: "",
+      convertriAccount: "",
+      cloudflareAccount: "",
+    },
+    links: {
+      signUp: "https://aiwealthaccess.com/signup",
+      signIn: "https://aiwealthaccess.com/login",
+      forgotPassword: "https://aiwealthaccess.com/forgot-password",
+      training: "https://aiwealthaccess.com/training",
+      supportEmail: "AIWealth@neoai.freshdesk.com",
+      supportPortal: "",
+      thankYou: "",
+    },
+    premiumFeatures: [
+      {
+        name: "Accelerator",
+        description: {
+          en: "A vault of 50 done-for-you landing pages across 5 niches, and every page has a different design and angle. The member picks a page, syncs it with their affiliate link, and it is ready to send traffic to. No design work and no writing; they just pick and sync.",
+          ar: "خزنة فيها 50 صفحة هبوط جاهزة على 5 مجالات، وكل صفحة بتصميم وزاوية مختلفة. العضو بيختار صفحة، يربطها بلينك الأفلييت بتاعه، وتبقى جاهزة يبعت لها زوار. من غير شغل تصميم ولا كتابة؛ بيختار ويربط وخلاص.",
+        },
+        url: "https://aiwealthaccess.com/accelerator",
+      },
+      {
+        name: "Recurring Wealth Streams",
+        description: {
+          en: "A hand-picked list of the top 10 Digistore24 products that pay recurring commissions. When someone subscribes through the member's link, the member gets paid every month from the same customer, not just one time. The member promotes these products the same way, but the income keeps repeating.",
+          ar: "قايمة مختارة بعناية فيها أحسن 10 منتجات على Digistore24 بتدفع عمولات متكررة. لما حد يشترك من لينك العضو، العضو بيقبض كل شهر من نفس العميل، مش مرة واحدة بس. العضو بيروج للمنتجات دي بنفس الطريقة، بس الدخل بيفضل يتكرر.",
+        },
+        url: "https://aiwealthaccess.com/recurring-wealth",
+      },
+      {
+        name: "Social Payouts",
+        description: {
+          en: "50 proven social media posts for every niche, ready for Facebook, Instagram, Twitter, and more. The member's affiliate link gets inserted into the post automatically. They copy, post, and get social traffic on top of the blog-comment traffic.",
+          ar: "50 بوست سوشيال ميديا مجربين لكل مجال، جاهزين لفيسبوك وإنستجرام وتويتر وغيرهم. لينك الأفلييت بتاع العضو بيتحط في البوست أوتوماتيك. هو بينسخ وينشر، وياخد زيارات من السوشيال فوق زيارات تعليقات المدونات.",
+        },
+        url: "https://aiwealthaccess.com/social-payouts",
+      },
+      {
+        name: "Wealth Protector",
+        description: {
+          en: "The account safety page. It shows account verification, security score, and encryption status in real time. When a member asks if their AiWealth account is safe, send them this page so they can see the protection status themselves.",
+          ar: "صفحة أمان الحساب. بتعرض توثيق الحساب ودرجة الأمان وحالة التشفير لحظة بلحظة. لو عضو سأل إذا كان حساب AiWealth بتاعه آمن، ابعت له الصفحة دي يشوف حالة الحماية بنفسه.",
+        },
+        url: "https://aiwealthaccess.com/protector",
+      },
+    ],
+  },
+  {
     id: "secret-millionaire-society",
     name: "Secret Millionaire Society",
     description: {
@@ -475,6 +549,7 @@ export const SUPPORT_PRODUCTS: SupportProduct[] = [
     vsl: {
       everAffiliateAccount: "",
       convertriAccount: "",
+      cloudflareAccount: "",
     },
     links: {
       signUp: "https://getsmsociety.com/signup",

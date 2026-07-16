@@ -218,6 +218,11 @@ export default function SupportPage() {
       label: "Convertri account",
       value: product.vsl.convertriAccount,
     },
+    {
+      key: "vsl:cloudflare",
+      label: "Cloudflare account",
+      value: product.vsl.cloudflareAccount,
+    },
   ];
 
   return (
