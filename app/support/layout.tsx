@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import CustomCursor from "@/components/ui/custom-cursor";
 
 export const metadata: Metadata = {
   title: "Support Product Links — Relite",
@@ -22,7 +21,6 @@ export default function SupportLayout({
 }) {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <CustomCursor />
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <p className="font-logo text-lg tracking-tight">

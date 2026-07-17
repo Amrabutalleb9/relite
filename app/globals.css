@@ -86,12 +86,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-@media (pointer: fine) {
-  * {
-    cursor: none !important;
-  }
-}
-
 .ruled-line {
   height: 1px;
   background-color: var(--color-border);
