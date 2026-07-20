@@ -115,7 +115,7 @@ export default function PrivacyPage() {
                   hello@reliteagency.com
                 </a>
                 <br />
-                Relite — Golf Vita, Damac Hills, Dubai, United Arab Emirates
+                Relite — Dubai, UAE
               </p>
             </section>
           </div>

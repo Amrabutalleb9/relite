@@ -51,7 +51,7 @@ export default function ContactPage() {
                       Location
                     </p>
                     <p className="text-body-lg text-foreground max-w-md">
-                      Golf Vita, Damac Hills, Dubai, United Arab Emirates
+                      Dubai, UAE
                     </p>
                   </div>
                 </div>

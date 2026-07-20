@@ -52,7 +52,7 @@ export default function Footer() {
               </li>
               <li>
                 <p className="text-body text-muted max-w-[14rem]">
-                  Golf Vita, Damac Hills, Dubai, United Arab Emirates
+                  Dubai, UAE
                 </p>
               </li>
             </ul>
@@ -80,7 +80,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-caption text-muted">
-            Golf Vita, Damac Hills, Dubai
+            Dubai, UAE
           </p>
         </div>
       </div>
